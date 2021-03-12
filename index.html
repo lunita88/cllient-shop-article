@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src * 'self' data:">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Teddy Bear Shop</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand font-italic">Teddy Bear Shop</a>
+              <div class="btn-toolbar" role="toolbar">
+                <div id="add-button-container"></div> <!--div u kojem se nalazi add button template,form template i article item iz article.js -->
+                <div id="auth-buttons"></div> <!--div u kojem se prikazuje auth template buttons-->
+              </div>
+            </div>
+          </nav>
+            <nav class="nav d-flex justify-content-between bg-light border-top">
+                <a class="p-2 text-muted" href="#">Popular</a>
+                <a class="p-2 text-muted" href="#">New</a>
+                <a class="p-2 text-muted" href="#">Vintage</a>
+                <a class="p-2 text-muted" href="#">Design</a>
+                <a class="p-2 text-muted" href="#">Outlet</a>
+            </nav>
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                            <h1 class="display-4">Top Quality</h1>
+                            <p class="lead">Our teddy bears are top quality hand made using the finest materials and organic cotton.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                            <h1 class="display-4">Top Selection</h1>
+                            <p class="lead">We sell new and old teddy bear series in their original packaging, with the oldest dating back to 1929.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                            <h1 class="display-4">Top Pricing</h1>
+                            <p class="lead">Find your new unique teddy bear for the most competent pricing around the internet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="articles-list"></div>
+              
+                <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                  <div class="row">
+                    <div class="col-12 col-md">
+                      <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                      <small class="d-block mb-3 text-muted">&copy; 2017-2021</small>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>Features</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>Resources</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                      <h5>About</h5>
+                      <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <!-- Modal -->
+              <div id="article-form-container"></div>
+
+
+            <!--script type="text/javascript" src="js/vendor/jquery-3.5.1.slim.min.js"></script-->
+        <script type="text/javascript" src="js/vendor/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/user.js"></script>
+        <script type="text/javascript" src="js/article.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
